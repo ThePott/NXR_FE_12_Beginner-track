@@ -1,0 +1,62 @@
+/* 
+스타일을 지정할 땐
+이름 {
+    내용1;
+    내용2;
+    내용3;
+}
+의 형식을 따른다. 이 때 세미콜론(;)으로 그 줄이 끝나는 곳을 표시해야 한다.button */
+
+/* 자바스크립트에서 언제 ;로 해당 줄을 끝내는지는 일관적이지 않다.
+이보다 일관적인 C에서 ;를 안 쓰는 경우는 아래와 같다.
+이를 참고하면 자바스크립트에서 ;를 쓰지 않는 경우를 이해하는 데에 도움이 될 것이다. */
+
+/* 
+==== C에서 ;를 쓰지 않는 경우 ====
+---- Preprocessor directives (starting with #)
+#include <header.h>
+#define CONSTANT value
+
+
+---- Definitions with curly braces {}
+Function definitions
+Struct/union/enum definitions
+
+
+---- Compound statements/control structures
+if/else blocks
+while/for/do-while loops
+switch statements 
+*/
+
+
+
+/* 1. body 태그 
+전체에 아래 속성이 적용됨
+이와 같은 태그 스타일은 가장 덜 구체적으로 적용 대상을 정의하기에
+우선순위가 가장 낮다. */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* 2. class 태그
+해당 클래스에만 적용이 된다. 우선순위는 중간이다. */
+.daily-title {
+    color: #3498db;
+}
+.task {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 3. id 태그
+해당 id에만 적용이 된다. 우선순위가 가장 높다.
+id가 보통 고유한 것을 구분하는 상황에 사용된다는 걸 생각하면 이해하기 쉽다. */
+#challenge-task {
+    font-weight: bold;
+}
